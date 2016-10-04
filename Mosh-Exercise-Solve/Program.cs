@@ -14,7 +14,6 @@ namespace Mosh_Exercise_Solve
         {
 
             Stopwatch sw = new Stopwatch();
-            //Console.WriteLine(sw.start() - sw.stop());
             while (true)
             {
                 string start = sw.start();

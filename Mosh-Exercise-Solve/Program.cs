@@ -31,44 +31,44 @@ namespace Mosh_Exercise_Solve
             // task : exception occur when to stat called twice in a row
 
 
-            Post p = new Post();
-            int vote = 0;
-            Console.WriteLine(p.UploadPost());
-            //p.UploadPost();
-            bool count = true;
-                while (count)
-                {
+            //Post p = new Post();
+            //int vote = 0;
+            //Console.WriteLine(p.UploadPost());
+            ////p.UploadPost();
+            //bool count = true;
+            //    while (count)
+            //    {
 
-                    Console.WriteLine("Like This Post?" + " y or n ");
-                    string input = Console.ReadLine();
-                    switch (input)
-                    {
-                        case "y":
-                            vote = p.UpVote(vote);
-                            break;
+            //        Console.WriteLine("Like This Post?" + " y or n ");
+            //        string input = Console.ReadLine();
+            //        switch (input)
+            //        {
+            //            case "y":
+            //                vote = p.UpVote(vote);
+            //                break;
 
-                        case "n":
-                            vote = p.DownVote(vote);
-                            break;
-                        default:
-                            vote = 0;
-                            break;
+            //            case "n":
+            //                vote = p.DownVote(vote);
+            //                break;
+            //            default:
+            //                vote = 0;
+            //                break;
 
-                    }
-                    Console.WriteLine("want to vote more ?  y/n" + Environment.NewLine);
-                    var readLine = Console.ReadLine();
-                    if (readLine != null && readLine.Equals("n"))
-                    {
-                        count = false;
-                    }
+            //        }
+            //        Console.WriteLine("want to vote more ?  y/n" + Environment.NewLine);
+            //        var readLine = Console.ReadLine();
+            //        if (readLine != null && readLine.Equals("n"))
+            //        {
+            //            count = false;
+            //        }
 
                 
-                }
+            //    }
                 
                 
-                Thread.Sleep(1000);
+            //    Thread.Sleep(1000);
 
-                Console.WriteLine("Your post get " + vote + " vote ");
+            //    Console.WriteLine("Your post get " + vote + " vote ");
             
                 Console.ReadKey();
 

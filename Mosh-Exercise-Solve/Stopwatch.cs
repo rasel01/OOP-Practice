@@ -8,13 +8,13 @@ namespace Mosh_Exercise_Solve
 {
     public class Stopwatch
     {
-        public string start()
+        public string Start()
         {
             string start = DateTime.Now.ToString("HH:mm:ss ");
             return start;
         }
 
-        public string stop()
+        public string Stop()
         {
             string stop = DateTime.Now.ToString("HH:mm:ss ");
             return stop;

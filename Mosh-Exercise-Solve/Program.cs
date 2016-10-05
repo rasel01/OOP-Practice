@@ -17,11 +17,11 @@ namespace Mosh_Exercise_Solve
             while (true)
             {
                 //commit
-                string start = sw.start();
-                Console.WriteLine("start :" + start);
+                string start = sw.Start();
+                Console.WriteLine("Start :" + start);
                 Thread.Sleep(5000);
-                string end = sw.stop();
-                Console.WriteLine("stop :" + end);
+                string end = sw.Stop();
+                Console.WriteLine("Stop :" + end);
                 TimeSpan ts = (TimeSpan.Parse(end) - TimeSpan.Parse(start));
                 Console.WriteLine("diffrence " + ts + Environment.NewLine);
             }

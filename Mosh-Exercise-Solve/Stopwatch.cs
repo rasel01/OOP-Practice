@@ -11,13 +11,13 @@ namespace Mosh_Exercise_Solve
         ///commit
         public string Start()
         {
-            string start = DateTime.Now.ToString("HH:mm:ss ");
+            string start = DateTime.Now.ToString("HH:mm:ss");
             return start;
         }
 
         public string Stop()
         {
-            string stop = DateTime.Now.ToString("HH:mm:ss ");
+            string stop = DateTime.Now.ToString("HH:mm:ss");
             return stop;
         }
     }

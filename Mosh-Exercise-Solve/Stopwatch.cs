@@ -8,6 +8,7 @@ namespace Mosh_Exercise_Solve
 {
     public class Stopwatch
     {
+        ///commit
         public string Start()
         {
             string start = DateTime.Now.ToString("HH:mm:ss ");

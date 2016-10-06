@@ -14,7 +14,7 @@ namespace Mosh_Exercise_Solve
 
         public override void ConnectionOpen()
         {
-            Console.WriteLine("SQL connection is open");
+            Console.WriteLine("SQL connection is open" );
         }
         
         public override void ConnectionClose()

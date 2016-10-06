@@ -69,6 +69,19 @@ namespace Mosh_Exercise_Solve
             //    Thread.Sleep(1000);
 
             //    Console.WriteLine("Your post get " + vote + " vote ");
+
+
+            //DbConnection db1 = new SqlConnection("Hello");
+            //db1.ConnectionString = "this is connetion string";
+            //db1.ConnectionOpen();
+
+            //DbConnection db2 = new OracleConnection("Hello");
+            //db2.ConnectionString = "this is connetion string";
+            //db2.ConnectionOpen();
+
+            DbCommand command = new DbCommand("Insert into table 1");
+            command.Execute();
+                
             
                 Console.ReadKey();
 

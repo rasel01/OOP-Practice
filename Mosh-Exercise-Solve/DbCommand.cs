@@ -10,15 +10,25 @@ namespace Mosh_Exercise_Solve
     {
         public string Command { get; set; }
         private readonly DbConnection _db;
-        public DbCommand(string instruction)
-        {
-            _db = new OracleConnection("ConnectinString For SQl Database connection");
-            Command = instruction;
 
+        public DbCommand(DbConnection conenction)
+        {
+            _db = conenction;
+        }
+        public DbCommand(DbConnection conenction, string command)
+            : this(conenction)
+        {
+
+            Command = command;
         }
 
         public void Execute()
         {
+            if (string.IsNullOrWhiteSpace(Command))
+            {
+                Console.WriteLine("cmd exception");
+                return;
+            }
             _db.ConnectionOpen();
             Console.WriteLine(Command);
             _db.ConnectionClose();

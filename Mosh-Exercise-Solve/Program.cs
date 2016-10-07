@@ -62,28 +62,43 @@ namespace Mosh_Exercise_Solve
             //            count = false;
             //        }
 
-                
+
             //    }
-                
-                
+
+
             //    Thread.Sleep(1000);
 
             //    Console.WriteLine("Your post get " + vote + " vote ");
 
 
-            //DbConnection db1 = new SqlConnection("Hello");
-            //db1.ConnectionString = "this is connetion string";
+
+
+            // excercise : polymorphism problem : 
+
+            SqlConnection db1 = new SqlConnection("sql conencttion");
             //db1.ConnectionOpen();
 
-            //DbConnection db2 = new OracleConnection("Hello");
+            DbConnection db2 = new OracleConnection("oracle connection");
             //db2.ConnectionString = "this is connetion string";
-            //db2.ConnectionOpen();
+           // db2.ConnectionOpen();
 
-            DbCommand command = new DbCommand("Insert into table 1");
-            command.Execute();
-                
+            // DbCommand command = new DbCommand("Insert into table 1");
+            //command.Execute();
+
+
+          //  Console.ReadKey();
+
+            OracleConnection s = new OracleConnection("connection");
+            DbCommand cmd = new DbCommand(s,"kkk");
             
-                Console.ReadKey();
+            //cmd.Execute();
+
+            //cmd.Command = "delete....";
+
+            cmd.Execute();
+
+            
+
 
 
         }

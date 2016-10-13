@@ -70,7 +70,7 @@ namespace Mosh_Exercise_Solve
 
             //    Console.WriteLine("Your post get " + vote + " vote ");
             
-                Console.ReadKey();
+               // Console.ReadKey();
 
 
         }

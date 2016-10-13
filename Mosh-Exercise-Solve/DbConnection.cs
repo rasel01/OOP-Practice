@@ -8,7 +8,7 @@ namespace Mosh_Exercise_Solve
 {
     public abstract class DbConnection
     {
-        public string ConnectionString { get; set; }
+        protected string ConnectionString { get; set; }
         public TimeSpan Timeout { get; set; }
 
         public DbConnection(string connection)
